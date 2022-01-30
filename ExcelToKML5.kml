@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml>
+  <Document>
+    <name>aki el nombre</name>
+    <Placemark>
+                  <name>lojack</name>
+                    <Point>
+                      <coordinates>-69.0728711,18.494767</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>hunter</name>
+                    <Point>
+                      <coordinates>-69.97985,18.694706</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>foodinc</name>
+                    <Point>
+                      <coordinates>-69.9729,18.994646</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>valiente</name>
+                    <Point>
+                      <coordinates>-69.57287,18.474752</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>cesar motors</name>
+                    <Point>
+                      <coordinates>-69.272818,18.494577</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>sdmotors</name>
+                    <Point>
+                      <coordinates>-69.97291,18.594982</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>los alcarrizos</name>
+                    <Point>
+                      <coordinates>-69.977943,18.794787</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>color vision</name>
+                    <Point>
+                      <coordinates>-69.97297,18.994672</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>telemicro</name>
+                    <Point>
+                      <coordinates>-69.974697,18.4941684</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>guibia</name>
+                    <Point>
+                      <coordinates>-69.904291,18.494647</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>valiente</name>
+                    <Point>
+                      <coordinates>-69.881840333,18.3443377</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>cesar motors</name>
+                    <Point>
+                      <coordinates>-69.8475008333333,18.20424534</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>sdmotors</name>
+                    <Point>
+                      <coordinates>-69.8131613333333,18.06415298</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>los alcarrizos</name>
+                    <Point>
+                      <coordinates>-69.7788218333333,17.92406062</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>color vision</name>
+                    <Point>
+                      <coordinates>-69.7444823333333,17.78396826</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>telemicro</name>
+                    <Point>
+                      <coordinates>-69.7101428333333,17.6438759</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>valiente</name>
+                    <Point>
+                      <coordinates>-69.6768033333333,17.5073354</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>cesar motors</name>
+                    <Point>
+                      <coordinates>-69.64146333333,17.36369118</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>sdmotors</name>
+                    <Point>
+                      <coordinates>-69.6071243333333,17.22359882</coordinates>
+                    </Point>
+                </Placemark><Placemark>
+                  <name>los alcarrizos</name>
+                    <Point>
+                      <coordinates>-69.5727848333333,17.08050646</coordinates>
+                    </Point>
+                </Placemark>
+  </Document>
+</kml>

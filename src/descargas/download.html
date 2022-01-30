@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      #map {
+        height: 560px;
+        width: 100%;
+  
+        float: left;
+      }
+    </style>
+    <title>Descargar</title>
+</head>
+<body>
+  <h1>hola</h1>
+    <a href="/download" download>Descargar</a>
+
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <!-- Carga del plugin omnivore-->
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
+
+    <script>
+      // Creamos la variable "map" que será el contenedor de nuestro visor
+      var map = L.map("map", {
+        center: [18.494767, -69.57287],
+        zoom: 8
+      });
+
+      // Carga del mapa base de OSM
+      var osm = L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+          maxZoom: 18,
+          attribution:
+            'Map data © <a href="https://openstreetmap.org">OpenStreetMap' +
+            '</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">' +
+            "CC-BY-SA</a>"
+        }
+      ).addTo(map);
+
+      // Le damos estilos .SVG a nuestra capa personalizada de tiendas de Sant Joan d'Alacant
+      // (opcional, otra opción es definir una variable de estilos para puntos de leaflet)
+
+      var iconoSVG = L.icon({
+        iconUrl: "/shop.svg",
+        iconSize: [30, 65]
+      });
+
+      // Capa de puntos .kml cargada con omnivore
+      var establecimientos = L.geoJson(null, {
+        onEachFeature: function (feature, layer) {
+          layer.bindPopup(feature.properties["name"]);
+        },
+        pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, { icon: iconoSVG });
+        }
+      });
+      
+      console.log(establecimientos);
+      omnivore.kml("/download", null, establecimientos).addTo(map);
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+      integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
